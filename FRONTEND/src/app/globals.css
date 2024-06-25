@@ -1,0 +1,261 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+
+
+
+body {
+  background: linear-gradient(112.87deg, #FFF7F1 0%, #F3FAFF 100%);
+  width: 100%;
+  
+}
+.login-body{
+  background: linear-gradient(112.87deg, #FFE6D3 0%, #C9EAFF 100%);
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.image-container{
+
+  height:73vh;
+  width: auto;
+  display: flex;
+  margin: auto;
+ max-width: 622px;
+  
+}
+
+
+/* scrollbar style */
+
+
+.omni-scroll-bar:hover {
+  overflow-y: auto;
+}
+
+.omni-scroll-bar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.omni-scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.omni-scroll-bar::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.omni-scroll-bar::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* scrollbar style end */
+
+
+.chat-link-btn{
+  background-color: #2D8AC5 !important;
+  padding: 3px 10px 3px 10px;
+  border-radius: 5px;
+  color: white !important;
+
+}
+.chat-link-btn:hover{
+  background-color: #134e72 !important;
+  color: white !important;
+}
+
+
+
+.chat-link-btn-cancel{
+  background-color: white !important;
+  padding: 3px 10px 3px 10px;
+  border-radius: 5px;
+  color: black !important;
+
+}
+
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  width: 40%;
+  max-width: 500px;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #334155;
+  margin-bottom: 24px;
+}
+
+.modal-input {
+  width: 100%;
+  border: 1px solid #94a3b8;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+.modal-error {
+  color: #ef4444;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.modal-cancel {
+  background-color: #cbd5e1;
+  color: #334155;
+  margin-right: 8px;
+}
+
+.modal-merge {
+  background-color: #2D8AC5;
+  color: #ffffff;
+}
+
+.modal-button:hover {
+  background-color: #d1d5db;
+}
+
+.modal-merge:hover {
+  background-color: #1e3a8a;
+}
+
+
+
+/* ########### Guest user modal styling */
+
+
+/* Styles for the container */
+.container {
+  padding: 0 1.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 0.75rem;
+}
+
+
+.modal-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+}
+
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+}
+
+
+.input-field {
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+/* Styles for the join button */
+.join-button {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+/* Styles for the chat container */
+.chat-container {
+  margin-top: 1rem;
+}
+
+/* Styles for the chat window */
+.chat-window {
+  background: white;
+  padding: 1rem 0;
+  height: 100%;
+  border-radius: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* Styles for the chat content */
+.chat-content {
+  display: flex;
+}
+
+
+/* ########### Guest user modal styling */
+
+.chat-link-btn-cancel:hover{
+  background-color: #2D8AC5 !important;
+  color: white !important;
+}
+.sms-text{
+  @apply text-gray-400 text-sm
+}
+
+
+.employees-table-th-styles {
+  @apply text-start text-[#4D4D4D] text-[12px] md:text-[14px] font-normal md:leading-4 py-[10px] px-[8px] gap-[10px]  
+}
+
+.employees-table-tr-styles {
+  @apply text-[#0A0D26] text-[12px] md:text-[14px] md:leading-4 font-normal 
+}
+.sidebar-closed {
+  @apply  w-[0px]  duration-500 -ml-16
+}
+
+.add_employee_inputs{
+  @apply w-full py-[6px] px-[16px] md:py-[9px] md:px-[24px] border border-[#E1E1E1] rounded-[50px] bg-gradient-to-b from-[#F7F7F7] via-[#F7F7F7] to-[#E1E1E1] placeholder:text-[14px] placeholder:leading-4 placeholder:font-normal
+}
+.textarea{
+  @apply w-full py-[6px] px-[16px] md:py-[9px] md:px-[24px] border border-[#E1E1E1] rounded-[18px] bg-gradient-to-b from-[#F7F7F7] via-[#F7F7F7] to-[#E1E1E1] placeholder:text-[14px] placeholder:leading-4 placeholder:font-normal
+}
+
+.add_employee_lables{
+  @apply block text-[#343233] font-medium leading-4 text-[14px] mb-1
+}
